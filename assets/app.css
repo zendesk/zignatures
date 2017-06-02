@@ -1,0 +1,31 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.alert {
+  display: block;
+  width: 320px;
+  -webkit-transition: box-shadow .1s ease-in-out;
+  transition: box-shadow .1s ease-in-out;
+  border: 0;
+  border-radius: 2px;
+  background-color: #30aabc;
+  padding: 1em;
+  height: 100%;
+  text-decoration: none;
+  line-height: 1.66667;
+  white-space: normal;
+  color: #fff;
+  font-size: 12px;
+  font-weight: 400;
+}
+.alert-positive {
+  background-color: #16ba52;
+}
+.alert-negative {
+  background-color: #eb6651;
+}
+.margin-top-10px {
+  margin-top: 10px;
+}

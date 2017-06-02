@@ -1,0 +1,46 @@
+{
+  "name": "Zignatures",
+  "author": {
+    "name": "Andrey & Vlad",
+    "email": "asarapulov@zendesk.com",
+    "url": ""
+  },
+  "defaultLocale": "en",
+  "private": true,
+  "location": {
+    "support": {
+      "ticket_sidebar": "assets/iframe.html",
+      "new_ticket_sidebar": "assets/iframe.html"
+    }
+  },
+  "version": "1.3",
+  "frameworkVersion": "2.0",
+  "parameters": [
+    {
+      "name": "signature_template",
+      "type": "multiline",
+      "required": true,
+      "default": "<br>--<br><br><span  style='font-weight:bold;'>{{current_user.name}} [{{ticket.account}}]</span><br><br><span style='color:grey;font-size:14px;'><strong>tel:</strong> {{current_user. phone}}</span><br><span style='color:grey;font-size:14px;'><strong>email:</strong> {{current_user.email}}</span><br><span style='color:grey;font-size:14px;'><strong>www:</strong> <a href='https://www.zendesk.com/' target=_blank'>www.zendesk.com</a></span><br><br><img class='logo-image' src='https://d1eipm3vz40hy0.cloudfront.net/images/part-header/zendesk-relationshapes-logo.svg' width='101' height='19' alt='The Zendesk logo. Let's make things better in customer service.'><span></span>"
+    },
+    {
+      "name": "show_app_to_agents",
+      "type": "checkbox",
+      "default": true
+    },
+    {
+      "name": "sign_private_comment",
+      "type": "checkbox",
+      "default": true
+    },
+    {
+      "name": "agents_can_decide_on_comment_signatures",
+      "type": "checkbox",
+      "default": true
+    },
+    {
+      "name": "agents_can_decide_on_ticket_signatures",
+      "type": "checkbox",
+      "default": true
+    }
+  ]
+}

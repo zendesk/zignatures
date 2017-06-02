@@ -1,0 +1,28 @@
+{
+  "app": {
+    "description": "Zignature app enhances Agents, Admins and Marketing users to control, localize and customize signatures",
+    "name": "Zignatures",
+    "parameters": {
+      "signature_template": {
+        "label": "Text or HTML of a signature",
+        "helpText": "Copy here the entire text or HTML which be be used for Agent signatures. Standard Zendesk placeholders and dynamic content is allowed."
+      },
+      "show_app_to_agents": {
+        "label": "Show app to agents",
+        "helpText": "If selected Agents will be able to see this app on the right hand side. App informs agents whether ticket will be signed or not."
+      },
+      "sign_private_comment": {
+        "label": "Sign private comments",
+        "helpText": "If selected the app will sign private comments. Otherwise, private comments will be ignored."
+      },
+      "agents_can_decide_on_comment_signatures": {
+        "label": "Agents can decided on particular comment signature",
+        "helpText": "If selected Agent will be able to see an option not to sign a particular comment"
+      },
+      "agents_can_decide_on_ticket_signatures": {
+        "label": "Agents can decided on all comments signature",
+        "helpText": "If selected Agent will be able to see an option not to sign all comments particular comment"
+      }
+    }
+  }
+}
