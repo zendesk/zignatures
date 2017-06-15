@@ -3,17 +3,17 @@
   "author": {
     "name": "Andrey & Vlad",
     "email": "asarapulov@zendesk.com",
-    "url": ""
+    "url": "https://github.com/Sarapulov/zignatures"
   },
   "defaultLocale": "en",
-  "private": true,
+  "private": false,
   "location": {
     "support": {
       "ticket_sidebar": "assets/iframe.html",
       "new_ticket_sidebar": "assets/iframe.html"
     }
   },
-  "version": "1.3",
+  "version": "1.4",
   "frameworkVersion": "2.0",
   "parameters": [
     {
