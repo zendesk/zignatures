@@ -1,9 +1,9 @@
 {
   "name": "Zignatures",
   "author": {
-    "name": "Andrey & Vlad",
-    "email": "asarapulov@zendesk.com",
-    "url": "https://github.com/Sarapulov/zignatures"
+    "name": "Zendesk Labs",
+    "email": "zendesklabs@zendesk.com",
+    "url": "https://github.com/zendesklabs/zignatures"
   },
   "defaultLocale": "en",
   "private": false,
@@ -13,7 +13,7 @@
       "new_ticket_sidebar": "assets/iframe.html"
     }
   },
-  "version": "1.4",
+  "version": "1.4.1",
   "frameworkVersion": "2.0",
   "parameters": [
     {
