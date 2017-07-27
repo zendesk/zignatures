@@ -1,3 +1,6 @@
+body, html {
+  overflow: hidden;
+}
 body {
   display: flex;
   justify-content: center;
@@ -28,4 +31,12 @@ body {
 }
 .margin-top-10px {
   margin-top: 10px;
+}
+.float-right {
+  float:right;
+}
+.get_help:hover,
+.get_help:active {
+  opacity: 0.5;
+  cursor: pointer;
 }

@@ -1,10 +1,6 @@
-(function($, client){
+(function($, client, PARAMS){
   'use strict';
 
-  // const client = ZAFClient.init();
-  let PARAMS = {};
-
-  client.invoke('app.hide');
   client.on('app.registered', init);
 
   function init(e) {
@@ -14,11 +10,13 @@
     PARAMS.firstLoad = false;
     PARAMS.method = 'comment.appendHtml';
     PARAMS.noSignature = getBoolean(localStorage.getItem('noSignature'));
-    getUser();
+    PARAMS.gitHubURL = 'https://github.com/zendesklabs/zignatures/issues';
+
+    if (e.context.location == "modal") handleModal(); else getUser();
   }
 
   function getUser() {
-    client.get('currentUser').then(function(data) {
+    client.get('currentUser').then((data) => {
       PARAMS.current_user = data.currentUser;
       prepTranslation();
     });
@@ -26,8 +24,8 @@
 
   function prepTranslation() { // get translation file for current agent
       getTranslation(PARAMS.current_user.locale).then(
-        function (data) { getTicket(); },
-        function (data) {
+        (data) => { getTicket(); },
+        (data) => {
           logError('Unable to get translations. Check console for more details and contact App developer', data);
           getTicket();
         }
@@ -36,7 +34,7 @@
 
   function getTicket() {
     if (PARAMS.context.location !== 'new_ticket_sidebar') {
-      client.get('ticket').then(function(ticket){
+      client.get('ticket').then((ticket) => {
         PARAMS.ticket = ticket.ticket;
 
         PARAMS.isSignable = (PARAMS.ticket.comment.type === 'publicReply') || (PARAMS.ticket.comment.type === 'internalNote' && PARAMS.metadata.settings.sign_private_comment);
@@ -66,10 +64,10 @@
 
   function attachTicketSaveHandler() {
     PARAMS.isTicketSaveActive = true;
-    client.on('ticket.save', function() {
-      return client.get('ticket.comment').then(function(comment) {
+    client.on('ticket.save', () => {
+      return client.get('ticket.comment').then((comment) => {
         if (isCommentSignable(comment)) {
-          return client.invoke(PARAMS.method, PARAMS.metadata.settings.signature_template).then(function(result) {
+          return client.invoke(PARAMS.method, PARAMS.metadata.settings.signature_template).then((result) => {
             return true;
           });
         } else {
@@ -78,7 +76,7 @@
       });
     });
 
-    client.on('comment.type.changed', function(data) {
+    client.on('comment.type.changed', (data) => {
       PARAMS.isSignable = (data === 'publicReply') || (data === 'internalNote' && PARAMS.metadata.settings.sign_private_comment);
       PARAMS.canBeSignable = (data === 'publicReply') || (data === 'internalNote' && PARAMS.metadata.settings.sign_private_comment);
       showApp();
@@ -108,12 +106,17 @@
         <fieldset class="c-chk c-chk--toggle margin-top-10px">
           <input class="c-chk__input" id="no_tickets" type="checkbox" ${isTicketChecked}>
           <label class="c-chk__label u-zeta" dir="ltr" for="no_tickets">${tix_signature_text}</label>
-        </fieldset>`;
+        </fieldset>`,
+        // deflection modal button
+        help_button = `<img class="c-btn__icon float-right get_help" src="questionmark.png">`;
 
     $contrainer.append($(alert));
 
     if (PARAMS.metadata.settings.agents_can_decide_on_comment_signatures) $contrainer.append($(cmnt_signature));
     if (PARAMS.metadata.settings.agents_can_decide_on_ticket_signatures) $contrainer.append($(tix_signature));
+
+    // deflection modal button handler
+    $contrainer.append($(help_button)).find('.get_help').on('click', showDeflectionModal);
 
     $('#zignature').html($contrainer);
 
@@ -136,7 +139,7 @@
       showApp();
     });
 
-    $tix.change(function() {
+    $tix.change(() => {
       localStorage.setItem('noSignature', !$(this).is(':checked'));
       PARAMS.isSignable = $(this).is(':checked');
       PARAMS.noSignature = !$(this).is(':checked');
@@ -186,10 +189,24 @@ function logError(msg, data){ // log error message to the console
     if (data !== undefined) console.log(data);
 }
 
+///////// DEFLECTION MODAL /////////
+
+function handleModal() {
+  $('#zignature').append("<div class='deflection_msg'>This is a Zendesk Labs App. Zendesk Labs is a testing ground for experimental software applications that are in various stages of development. The software may change, break, or disappear at any time. While Zendesk does not support Zendesk Labs Apps, their creators may be able to help. The best way to contact the original developer is by creating a <a href='"+PARAMS.gitHubURL+"' target='_blank' title='Log app issue'>GitHub Issue</a> in the App's repository.</div>");
+  client.invoke('resize', { width: '40vw', height: '100%' });
+}
+
+function showDeflectionModal(){
+  client.invoke('instances.create', {
+    location: 'modal',
+    url: 'assets/iframe.html'
+  });
+}
+
 ///////// LOCALISATION /////////
 
 function getTranslation(locale) {
-      return new Promise(function(resolve, reject) { // handle translation file loading
+      return new Promise((resolve, reject) => { // handle translation file loading
         loadTranslations(locale.replace(/-.+$/,''), resolve, reject);
       });
     }
@@ -197,10 +214,10 @@ function getTranslation(locale) {
 function loadTranslations(locale, resolve, reject) { // load translation file
       $.ajax({
           url: 'translations/'+locale+'.json'
-        }).done(function(data) {
+        }).done((data) => {
           PARAMS.i18n = flatten(data);
           resolve();
-        }).fail(function(e) {
+        }).fail((e) => {
           if (locale === 'en') {
             logError("Unable to load translation file. Looks like main translation file is missing", e);
             reject();
@@ -212,10 +229,10 @@ function loadTranslations(locale, resolve, reject) { // load translation file
 
     function flatten(object) { // flattetning object for translations
       var flattened = {};
-      Object.keys(object).forEach(function(key) {
+      Object.keys(object).forEach((key) => {
         if (object[key] && typeof object[key] === 'object') {
           var flatObject = flatten(object[key]);
-          Object.keys(flatObject).forEach(function(key2) {
+          Object.keys(flatObject).forEach((key2) => {
             flattened[[key, key2].join('.')] = flatObject[key2];
           });
         } else {
@@ -225,4 +242,4 @@ function loadTranslations(locale, resolve, reject) { // load translation file
       return flattened;
     }
 
-})(jQuery, ZAFClient.init());
+})(jQuery, ZAFClient.init(), {});

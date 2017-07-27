@@ -9,11 +9,17 @@
   "private": false,
   "location": {
     "support": {
-      "ticket_sidebar": "assets/iframe.html",
-      "new_ticket_sidebar": "assets/iframe.html"
+      "ticket_sidebar": {
+        "url":"assets/iframe.html",
+        "autoHide": true
+      },
+      "new_ticket_sidebar": {
+        "url":"assets/iframe.html",
+        "autoHide": true
+      }
     }
   },
-  "version": "1.4.1",
+  "version": "1.4.2",
   "frameworkVersion": "2.0",
   "parameters": [
     {

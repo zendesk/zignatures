@@ -57,4 +57,6 @@ Zignatures app is completed and ready to be shipped, it is translated in several
 
 ![](screenshots/error_2.png)
 
+![](screenshots/screenshot-3.png)
+
 ![](screenshots/app_settings.png)
