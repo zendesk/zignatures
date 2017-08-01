@@ -1,7 +1,9 @@
 {
   "app": {
-    "description": "Zignature app enhances Agents, Admins and Marketing users to control, localize and customize signatures",
     "name": "Zignatures",
+    "short_description": "Zignature app enhances Agents, Admins and Marketing users to control, localize and customize signatures",
+    "long_description": "Zignatures is ticket sidebar/new ticket sidebar app which solves very old product limitation around Agent signatures.\nOut of the box Zendesk signatures are very limited in terms of localization, customization and advanced logic.\nZignatures solves all these limitations allowing Admins to create intelligent signatures with any type of look and feel, \nenabling Agents to see and control signatures behavior and ultimately make it possible for Marketing people to use this space more effectively.\nZignatures app solves real problem reported by customers like Dorchester or Radio Holland.\nZignatures app is completed and ready to be shipped, it is translated in several languages and uses latest Zendesk technologies like ZAF v2 and Zendesk gardens.",
+    "installation_instructions": "Install the app.\nConfigure settings.\nEnjoy!",
     "parameters": {
       "signature_template": {
         "label": "Text or HTML of a signature",
