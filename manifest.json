@@ -1,7 +1,7 @@
 {
   "name": "Zignatures",
   "author": {
-    "name": "Zendesk Labs",
+    "name": "Andrey Sarapulov",
     "email": "zendesklabs@zendesk.com",
     "url": "https://github.com/zendesklabs/zignatures"
   },
@@ -19,7 +19,7 @@
       }
     }
   },
-  "version": "1.4.3",
+  "version": "1.4.4",
   "frameworkVersion": "2.0",
   "parameters": [
     {
