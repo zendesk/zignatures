@@ -2,6 +2,8 @@
 
 Zignature app enhances Agents, Admins and Marketing users to control, localize and customize signatures
 
+Available in English, German and Russian languages.
+
 ### Description
 
 Zignatures is ticket sidebar/new ticket sidebar app which solves very old product limitation around Agent signatures.
