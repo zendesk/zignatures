@@ -139,7 +139,7 @@
       showApp();
     });
 
-    $tix.change(() => {
+    $tix.change(function() {
       localStorage.setItem('noSignature', !$(this).is(':checked'));
       PARAMS.isSignable = $(this).is(':checked');
       PARAMS.noSignature = !$(this).is(':checked');
