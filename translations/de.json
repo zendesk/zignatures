@@ -1,0 +1,31 @@
+{
+  "app": {
+    "name": "Zignatures",
+    "short_description": "Ermöglicht Agenten ihre Signatur bei Bedarf zu deaktivieren.",
+    "long_description": "Zignatures ist eine App in der Seitenleiste, die Admins die Möglichkeit gibt, intelligente Signaturen in eigenem Look & Feel zu erstellen. Agenten können diese beliebig bei Bedarf einsetzen und Marketing kann diesen Bereich effizienter für ihre Zwecke einsetzen.",
+    "installation_instructions": "App installieren.\nSettings vornehmen.\nEnjoy!",
+    "parameters": {
+      "signature_template": {
+        "label": "Text oder HTML einer Signatur",
+
+"helpText": "Hinterlege hier die Agenten-Signatur als Text oder HTML. Standard Zendesk Platzhalter sowie Dynamische Inhalte werden unterstützt."
+      },
+      "show_app_to_agents": {
+        "label": "App in Seitenleiste anzeigen",
+        "helpText": "Wenn aktiviert kann der Agent die App auf der rechten Seitenleiste einblenden. Die App informiert, ob eine Antwort signiert wird."
+      },
+      "sign_private_comment": {
+        "label": "Signiere auch interne Notizen",
+        "helpText": "Sofern selektiert, werden auch interne Notizen signiert. Wenn nicht, werden diese Notizen ignoriert."
+      },
+      "agents_can_decide_on_comment_signatures": {
+        "label": "Wahlmöglichkeit des Agenten für einzelne Antwort (Signatur ja/nein)",
+        "helpText": "Sofern selektiert, kann der Agent die Signatur für einen einzelnen Kommentar deaktivieren."
+      },
+      "agents_can_decide_on_ticket_signatures": {
+        "label": "Wahlmöglichkeit für alle Antworten (Signatur ja/nein)",
+        "helpText": "Sofern selektiert, kann der Agent für alle Antworten entscheiden, ob eine Signatur ergänzt wird."
+      }
+    }
+  }
+}

@@ -19,11 +19,11 @@
       },
       "agents_can_decide_on_comment_signatures": {
         "label": "Agents can decided on particular comment signature",
-        "helpText": "If selected Agent will be able to see an option not to sign a particular comment"
+        "helpText": "If selected Agent will be able to see an option not to sign a particular comment."
       },
       "agents_can_decide_on_ticket_signatures": {
         "label": "Agents can decided on all comments signature",
-        "helpText": "If selected Agent will be able to see an option not to sign all comments particular comment"
+        "helpText": "If selected Agent will be able to see an option not to sign any comments."
       }
     }
   }
