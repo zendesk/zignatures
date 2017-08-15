@@ -120,7 +120,8 @@
 
     $('#zignature').html($contrainer);
 
-    client.invoke('resize', {width: '100%',height: $('html').height() + 'px'});
+    let h = $(document).height() ? $(document).height() + 'px' : '100%'; // FF return 0 for $(document).height()
+    client.invoke('resize', { width: '100%', height: h });
     client.invoke('app.show');
 
     PARAMS.isSignatureAllowed = isSignatureAllowed;
