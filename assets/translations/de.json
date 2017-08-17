@@ -1,0 +1,6 @@
+{
+  "comment_will_be_signed":"Diese Antwort wird beim Speichern <strong>automatisch signiert</strong>.",
+  "comment_not_be_signed":"Diese Antwort wird beim Speichern <strong>nicht signiert</strong>.",
+  "sign_comment":"Diese Antwort signieren",
+  "sign_tickets":"Antworten immer signieren"
+}
