@@ -1,8 +1,118 @@
-*** LICENSE ***
+ZENDESK LABS LICENSE
 
+THIS ZENDESK LABS’ LICENSE (THE “LICENSE”) CONSTITUTES A CONTRACT BETWEEN
+YOU AND ZENDESK AND GOVERNS USE OF AND ACCESS TO THE ZENDESK LABS
+SOFTWARE (AS DEFINED BELOW) BY YOU, AGENTS AND END-USERS WHETHER IN
+CONNECTION WITH A PAID SUBSCRIPTION TO THE SERVICE OR A FREE TRIAL OF THE
+SERVICE. ZENDESK LABS SOFTWARE IS NOT PART OF THE SERVICE AND YOUR USE IS NOT
+COVERED BY THE MASTER SUBSCRIPTION AGREEMENT.
+By accepting this License, or by accessing or using the Zendesk Labs Software, or authorizing or
+permitting any Agent or End-User to access or use the Zendesk Labs Software, You agree to be bound by
+the terms of this License. If You are entering into this License on behalf of a company, organization or
+another legal entity (an “Entity”), You are agreeing to the License for that Entity and representing to
+Zendesk that You have the authority to bind such Entity and its affiliates to the License, in which case the
+terms “Subscriber,” “You,” “Your” or related capitalized terms herein shall refer to such Entity and its
+affiliates. If You do not have such authority, or if You do not agree with this License, You must not accept
+this License and may not use the Zendesk Labs Software.
+Capitalized terms used, but not defined herein, have the meaning set forth in the Zendesk, Inc. (“Zendesk”)
+Master Subscription Agreement (available at https://www.zendesk.com/company/customerspartners/#master-subscription-agreement)
+(the “Master Subscription Agreement”). The software made
+available herein constitutes “Zendesk Labs Software” which may be implemented to enable experimental
+features or functionality to be utilized in connection with a subscription to the Service. During the
+Subscription Term and subject to compliance by You, Agents and End Users with the License, You have
+the limited right to access and use the Zendesk Labs Software for Your internal business purposes. Without
+limiting the foregoing, Your right to access and use the Zendesk Labs Software may also be subject to
+additional restrictions and policies implemented by Zendesk from time to time as will be communicated to
+You in writing.
+
+1. ACCESS TO ZENDESK LABS SOFTWARE
+A high speed Internet connection is required for proper transmission of the Zendesk Labs Software. You
+are responsible for procuring and maintaining the network connections that connect Your network to the
+Zendesk Labs Software, including, but not limited to, “browser” software that supports protocols used by
+Zendesk, including Secure Socket Layer (SSL) protocol or other protocols accepted by Zendesk, and to
+follow procedures for accessing services that support such protocols. We are not responsible for notifying
+You, Agents or End Users of any upgrades, fixes or enhancements to any such software or for any
+compromise of data, including Your Data, transmitted across computer networks or telecommunications
+facilities (including but not limited to the Internet) which are not owned, operated or controlled by
+Zendesk. We assume no responsibility for the reliability or performance of any connections as described in
+this section.
+
+2. USE OF ZENDESK LABS SOFTWARE
+You agree not to (a) license, sublicense, sell, resell, rent, lease, transfer, assign, distribute, time share or
+otherwise commercially exploit or make the Zendesk Labs Software available to any third party, other than
+authorized Agents and End Users in furtherance of Your internal business purposes as expressly permitted
+by the Master Subscription Agreement; (b) use the Zendesk Labs Software to Process data on behalf of any
+third party other than Agents or End Users; (c) modify, adapt, or hack the Zendesk Labs Software or
+otherwise attempt to gain unauthorized access to the Zendesk Labs Software or related systems or
+networks; (d) falsely imply any sponsorship or association with Zendesk, (e) use the Zendesk Labs
+Software in any unlawful manner, including but not limited to violation of any persons’ privacy rights; (f)
+use the Zendesk Labs Software to send unsolicited or unauthorized junk mail, spam, pyramid schemes or
+other forms of duplicative or unsolicited messages; (g) use the Zendesk Labs Software to store or transmit
+files, materials, data, text, audio, video, images or other content that infringes on any persons' intellectual
+property rights; (h) use the Zendesk Labs Software in any manner that interferes with or disrupts the
+integrity or performance of the Zendesk Labs Software and its components; (i) attempt to decipher,
+decompile, reverse engineer or otherwise discover the source code of any software making up the Zendesk
+Labs Software; (j) use the Zendesk Labs Software to knowingly post, transmit, upload, link to, send or store
+any content that is unlawful, racist, hateful, abusive, libelous, obscene, or discriminatory; (k) use the
+Zendesk Labs Software to store or transmit any “protected health information” as that term is defined in 45
+C.F.R. 160.103; (l) use the Zendesk Labs Software to knowingly post transmit, upload, link to, send or
+store any viruses, malware, Trojan horses, time bombs, or any other similar harmful software (“Malicious
+Software”); or (m) try to use, or use the Zendesk Labs Software in violation of this License or the Master
+Subscription Agreement.
+You are responsible for compliance with the provisions of this License by Agents and End Users and for
+any and all activities that occur under Your Account, as well as for all Your Data. Without limiting the
+foregoing, You are solely responsible for ensuring that use of the Zendesk Labs Software to store and
+transmit Your Data is compliant with all applicable laws and regulations. You also maintain all
+responsibility for determining whether the Zendesk Labs Software or the information generated thereby is
+accurate or sufficient for Your purposes.
+3. RISKS OF USING ZENDESK LABS SOFTWARE
+Use of Zendesk Labs Software is subject to the following risks and conditions:
+(a) the Zendesk Labs Software is not a component of the Service;
+(b) the Zendesk Labs Software may not be in final form and may contain errors, design flaws or other
+problems;
+(c) the Zendesk Labs Software is not expected to function fully or adequately upon installation, and it is
+expected and anticipated that further testing, modification and development may be necessary to make the
+Zendesk Labs Software functional;
+(d) it may not be possible to make the Zendesk Labs Software functional;
+(e) use of the Zendesk Labs Software may result in unexpected results, loss of data, project delays or other
+unpredictable damage or loss; and
+(f) Zendesk is under no obligation to release and/or offer for sale commercial versions of the Zendesk Labs
+Software, and Zendesk has the right to unilaterally abandon development or availability of the Zendesk
+Labs Software at any time and without any obligation or liability to You. You further agree that Zendesk
+shall have no obligation to correct any bugs, defects or errors in the Zendesk Labs Software or otherwise to
+support or maintain the Zendesk Labs Software.
+
+4. DISCLAIMER OF WARRANTIES
+Zendesk Labs Software is provided “AS IS” and on an “AS AVAILABLE” basis, and Zendesk makes no
+warranties as to the Zendesk Labs Software.
+ZENDESK DISCLAIMS ALL WARRANTIES, EXPRESS OR IMPLIED, INCLUDING BUT NOT
+LIMITED TO THE IMPLIED WARRANTIES OF MERCHANTABILITY, FITNESS FOR A
+PARTICULAR PURPOSE, NONINFRINGEMENT AND THOSE ARISING FROM A COURSE
+OF DEALING OR USAGE OF TRADE RELATED TO THE ZENDESK LABS SOFTWARE, ITS
+USE OR ANY INABILITY TO USE IT OR THE RESULTS OF ITS USE.
+
+5. RELEASE
+If You elect to utilize any Zendesk Labs Software, You are agreeing to release Zendesk from any claim
+with regard to the Zendesk Labs Software, its operation, availability or its failure to operate or be
+available. Without limiting the generality of the foregoing, You acknowledge and agree that neither the
+use, availability nor operation of any Zendesk Labs Software shall be subject to any service level
+commitment applicable to the Service.
+
+6. INDEMNIFICATION
+You will indemnify and hold Zendesk harmless against any claim brought by a third party against Zendesk
+arising from or related to use of the Zendesk Labs Software by You, Agents or End Users in breach of this
+License or the Master Subscription Agreement or matters which You have expressly agreed to be
+responsible pursuant to the License or the Master Subscription Agreement; provided that Zendesk promptly
+notifies You of the threat or notice of such a claim.
+
+7. GOVERNING LAW
+This License shall be governed by the laws of the State of California without regard to conflict of laws
+principles. You hereby expressly agree to submit to the exclusive personal jurisdiction of the federal and
+state courts of the State of California, San Francisco County, for the purpose of resolving any dispute
+relating to the License or access to or use of the Zendesk Labs Software by You, Agents or End Users.
+
+8. DISTRIBUTION
 Not for sharing or distribution without explicit authors approvals.
-
 For approval contact:
-
 Andrey Sarapulov / asarapulov@zendesk.com
 Vladimir Avrov / vavrov@zendesk.com

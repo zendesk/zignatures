@@ -7,6 +7,11 @@
   },
   "defaultLocale": "en",
   "private": false,
+  "version": "1.5",
+  "frameworkVersion": "2.0",
+  "singleInstall": true,
+  "termsConditionsURL": "https://sarapulov.zendesk.com/app_market/assets/zendesk_labs_license-0537093997011144fd56f1e50bfd89288287a6d802b14e52c998ccc82c46faa0.pdf",
+  "gaID": "UA-122221692-1",
   "location": {
     "support": {
       "ticket_sidebar": {
@@ -19,14 +24,12 @@
       }
     }
   },
-  "version": "1.4.8",
-  "frameworkVersion": "2.0",
   "parameters": [
     {
       "name": "signature_template",
       "type": "multiline",
       "required": true,
-      "default": "<br>--<br><br><span  style='font-weight:bold;'>{{current_user.name}} [{{ticket.account}}]</span><br><br><span style='color:grey;font-size:14px;'><strong>tel:</strong> {{current_user. phone}}</span><br><span style='color:grey;font-size:14px;'><strong>email:</strong> {{current_user.email}}</span><br><span style='color:grey;font-size:14px;'><strong>www:</strong> <a href='https://www.zendesk.com/' target=_blank'>www.zendesk.com</a></span><br><br><img class='logo-image' src='https://d1eipm3vz40hy0.cloudfront.net/images/part-header/zendesk-relationshapes-logo.svg' width='101' height='19' alt='The Zendesk logo. Let's make things better in customer service.'><span></span>"
+      "default": "<br>--<br><br><span style='font-weight:bold;'>{{current_user.name}} [{{ticket.account}}]</span><br><br><span style='color:grey;font-size:14px;'><strong>tel:</strong> {{current_user.phone}}</span><br><span style='color:grey;font-size:14px;'><strong>email:</strong> {{current_user.email}}</span><br><span style='color:grey;font-size:14px;'><strong>www:</strong> <a href='https://www.zendesk.com/' target=_blank'>www.zendesk.com</a></span><br><br><img src='https://d1eipm3vz40hy0.cloudfront.net/images/part-header/zendesk-relationshapes-logo.svg' width='101' height='19' alt='Zendesk logo'><span></span>"
     },
     {
       "name": "show_app_to_agents",
@@ -45,6 +48,11 @@
     },
     {
       "name": "agents_can_decide_on_ticket_signatures",
+      "type": "checkbox",
+      "default": true
+    },
+    {
+      "name": "show_labs_icon",
       "type": "checkbox",
       "default": true
     }

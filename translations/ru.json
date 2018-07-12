@@ -2,8 +2,8 @@
   "app": {
     "name": "Zignatures",
     "short_description": "Приложение Zignatures улушает контроль над Агентскими подписями",
-    "long_description": "Zignatures - это приложение, которое работает на тикетах Zendesk-а.\nZignatures позволяет решить большинство проблем связанных с Агентскими подписями.",
-    "installation_instructions": "Установить!\nНастроить!.\nИспользовать на полную катушку!",
+    "long_description": "Zignatures - это приложение, которое работает на тикетах Zendesk-а.\n\nZignatures позволяет решить большинство проблем связанных с Агентскими подписями.\n\n## Примеры\n\n![](https://cl.ly/1k2m1N310Y2F/Image%202018-07-12%20at%201.30.52%20PM.png)\n\n![](https://cl.ly/2K1V1Y3i1D10/Image%202018-07-12%20at%201.28.40%20PM.png)\n\n![](https://cl.ly/2R1n0T2H2o35/Image%202018-07-12%20at%201.26.37%20PM.png)\n\n## Демо\n\n![](https://cl.ly/3e3O3p0M1L3F/Screen%20Recording%202018-07-12%20at%2001.33%20PM.gif)",
+    "installation_instructions": "## Step 1\n\nInstall the app and accept T&C\n\n## Step 2\n\nConfigure **Text or HTML of the signature**.\n\nYou can use text, HTML, Zendesk placeholders and Zendesk Dynamic Content.\n\nBelow is representative example of HTML signature.\n\n`<br>--<br><br><span style='font-weight:bold;'>`\n`{{current_user.name}} [{{ticket.account}}]` \n`</span><br><br><span style='color:grey;`\n`font-size:14px;'> <strong>tel:</strong>`\n` {{current_user.phone}} </span><br>`\n`<span style='color:grey;font-size:14px;'>`\n`<strong>email:</strong>`\n` {{current_user.email}}</span><br>`\n`<span style='color:grey;font-size:14px;'>`\n`<strong>www:</strong> `\n`<a href='https://www.zendesk.com/' `\n`target=_blank'>www.zendesk.com</a>`\n`</span><br><br><img class='logo-image'`\n`src='https://d1eipm3vz40hy0.cloudfront.net`\n`/images target=_blank'>www.zendesk.com</a>`\n`width='101' height='19' alt='Zendesk logo`\n`Relationship are complicated'><span></span>`\n\n## Step 3\n\nConfigure visibility:\n\n- **Show app to agents** - If selected Agents will be able to see this app on the right hand side. App informs agents whether ticket will be signed or not\n\n- **Show little question mark icon referring to Zendesk Labs** - If selected and app is visible the little question mark icon will be shown. It open modal window with Zendesk Labs disclaimer\n\n## Step 4\n\nConfigure behaviour:\n\n- **Sign private comments** - If selected the app will sign private comments. Otherwise, private comments will be ignored\n\n- **Agents can decided on particular comment signature** - If selected Agent will be able to see an option not to sign a particular comment\n\n- **Agents can decided on all comments signature** - If selected Agent will be able to see an option not to sign any comments\n\n## Step 5\n\nSave the setting. Refresh Zendesk pages.\n\nIf configured correctly the app will inject the signature when Agent press Submit button.",
     "parameters": {
       "signature_template": {
         "label": "Текст или HTML шаблон подписи",
@@ -24,6 +24,10 @@
       "agents_can_decide_on_ticket_signatures": {
         "label": "Агенты могут подписывать все свои комментарии",
         "helpText": "Если выбрано будут иметь возможность подписывать все свои комментарии"
+      },
+      "show_labs_icon": {
+        "label": "Показать значок с вопросом со ссылкой на Zendesk Labs",
+        "helpText": "Если выбрано будет показан значок с вопросом, который открывает модальное окно со ссылкой на Zendesk Labs"
       }
     }
   }

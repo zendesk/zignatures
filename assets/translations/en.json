@@ -1,6 +1,7 @@
 {
   "comment_will_be_signed":"<strong>This comment will be automatically signed</strong> when you press Submit button.",
-  "comment_not_be_signed":"<strong>This comment will not be signed.</strong> when you press Submit button.",
+  "comment_not_be_signed":"<strong>This comment will not be signed</strong> when you press Submit button.",
   "sign_comment":"Sign this comment",
-  "sign_tickets":"Sign all my comments"
+  "sign_tickets":"Sign all my comments",
+  "deflection_message":"This is a Zendesk Labs App. Zendesk Labs is a testing ground for experimental software applications that are in various stages of development. The software may change, break, or disappear at any time. While Zendesk does not support Zendesk Labs Apps, their creators may be able to help. The best way to contact the original developer is by creating a <a href='https://github.com/zendesklabs/zignatures/issues' target='_blank' title='Log an issue on github'>github issue</a> in the App's repository."
 }

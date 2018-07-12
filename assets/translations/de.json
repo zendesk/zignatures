@@ -2,5 +2,6 @@
   "comment_will_be_signed":"Diese Antwort wird beim Speichern <strong>automatisch signiert</strong>.",
   "comment_not_be_signed":"Diese Antwort wird beim Speichern <strong>nicht signiert</strong>.",
   "sign_comment":"Diese Antwort signieren",
-  "sign_tickets":"Antworten immer signieren"
+  "sign_tickets":"Antworten immer signieren",
+  "deflection_message":"Dies ist eine Zendesk Labs App. Zendesk Labs ist ein Testfeld für experimentelle Softwareanwendungen, die sich in verschiedenen Entwicklungsstadien befinden. Die Software kann sich jederzeit ändern, brechen oder verschwinden. Während Zendesk die Zendesk Labs-Apps nicht unterstützt, können ihre Ersteller möglicherweise helfen. Der beste Weg, den ursprünglichen Entwickler zu kontaktieren, ist die Erstellung eines <a href='https://github.com/zedesklabs/zignatures/issues' target='_blank'title='Log ein Problem auf github'> github issue </ a> im Repository der App."
 }
